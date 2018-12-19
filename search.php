@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Resto</title>
+  <title>Search</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -56,79 +56,62 @@
       </ul>
     </div>
 </nav>
-<br>
-<br>
-<div class="container" style="margin-top:30px">
+	<br>
+	<br>
+<div class="container row">
+	<div class="col-md-10" style="margin-top:30px">
   <div class="row">
-    <div class="col-sm-8">
-      <h2>Resto1</h2>
-      <div class="fakeimg">Fake Image</div>
-      <br>
-	  <!-- Nav tabs -->
-	  <ul class="nav nav-tabs">
-		  <li class="nav-item">
-			  <a class="nav-link active" data-toggle="tab" href="#sekilas">At a glance</a>
-		  </li>
-		  <li class="nav-item">
-			  <a class="nav-link" data-toggle="tab" href="#review">Review</a>
-		  </li>
-	  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div id="sekilas" class="container tab-pane active"><br>
-      <h3>At a glance</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		<div id="home" role="tabpanel" aria-labelledby="home-tab">
-			<div class="row">
-				<div class="col-md-4">
-					<label>Address</label>
-				</div>
-				<div class="col-md-8">
-					<p>Sepanjang Jalan Kenangan</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<label>Rating</label>
-				</div>
-				<div class="col-md-8">
-					<p>4</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<label>Working Hour</label>
-				</div>
-				<div class="col-md-8">
-					<p>XX:XX-XX:XX</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<label>Average Price</label>
-				</div>
-				<div class="col-md-8">
-					<p>Rp.xxx</p>
-				</div>
-			</div>
+    <div class="col-sm-4">
+		<div class="btn-group-vertical btn-group-toggle btn-group-lg position-fixed">
+			<p style="font-size: 30px">Try Another Cuisine</p>
+			<a href="search.php" class="btn btn-danger">Chinese</a>
+			<a href="search.php" class="btn btn-danger">Cafe</a>
+			<a href="search.php" class="btn btn-danger">Indonesian</a>
+			<a href="search.php" class="btn btn-danger">Western</a>
+			<a href="search.php" class="btn btn-danger">Japanese</a>
 		</div>
+<!--
+      <h4>Sort</h4>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+	  <h4>Category</h4>
+	  <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+-->
     </div>
-    <div id="review" class="container tab-pane fade"><br>
-      <h3>Review</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-	  <form action="#">
-		<div class="form-group">
-			<label for="comment">Review :</label>
-			<textarea class="form-control" rows="5" id="review" name="text"></textarea>
-		</div>
-    <button type="submit" class="btn btn-danger">Send Review</button>
-  </form>
+    <div class="col-sm-8">
+	  <a>
+		  <h2>Resto1</h2>
+	  </a>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <br>
+      <a>
+	  <h2>Resto2</h2>
+	  </a>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
   </div>
-    </div>
-	<div class="col-sm-4">
-		<h4>Popular</h4>
+</div>
+<div class="col-md-2">
+	<br>
+	<h4>Popular</h4>
 		<div class="card" style="width:400px">
 			<img class="card-img-top" src="contohresto.jpg" alt="Card image" style="width:100%">
 			<div class="card-body">
@@ -150,8 +133,7 @@
 				<a href="#" class="btn btn-danger">See this resto</a>
 			</div>
 		</div>
-	  </div>
-	</div>
+</div>
 </div>
 
 <footer class="container-fluid text-center bg-light">
