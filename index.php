@@ -16,7 +16,6 @@
       line-height: 1.8;
       color: #818181;
 /*	  background-image: url("10 Makanan Paling Enak Didunia.jpg");*/
-
   }
   h2 {
       font-size: 24px;
@@ -32,7 +31,6 @@
       font-weight: 400;
       margin-bottom: 30px;
   }  
-
 .modal1 {
 /*   position: absolute;*/
    top: 80px;
@@ -84,6 +82,15 @@
       width: 100%;
       height: 100%;
       margin-bottom: 10px;
+  }
+  .cuisine img {
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+	  padding: 5px;
+	  width: 600px;
+  }
+  .cuisine img:hover {
+	  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   }
   .carousel-control.right, .carousel-control.left {
       background-image: none;
@@ -327,7 +334,7 @@
 	<br>
   <form>
     <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Cari Tempat Makan Favoritmu !" required>
+      <input class="form-control" size="50" placeholder="Cari Tempat Makan Favoritmu !">
       <div class="input-group-btn">
         <a href="search.php"><button type="button" class="btn btn-danger slide">Search</button></a>
       </div>
@@ -336,30 +343,56 @@
 </div>
 
 <!-- Container Cuisine -->
-<div id="Jenis" class="container-fluid text-center">
-  <h2>CUISINE</h2><br>
-<!--  <h4>What we have created</h4>-->
-  <div class="row text-center slideanim">
+<div id="Jenis" class="container-fluid text-center cuisine">
+  <h2>CUISINE</h2>
+	<br>
+	<div class="row text-center slideanim">
+    <div class="col-sm-6">
+      <div class="thumbnail">
+		  <a href="search.php">
+			  <img src="western.jpg" alt="western" height="auto">
+			  <p style="font-size: 30px"><strong>Western</strong></p>
+		  </a>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="thumbnail">
+		  <a href="search.php">
+			  <img src="indog.jpg" alt="indonesian" height="auto">
+			  <p style="font-size: 30px"><strong>Indonesian</strong></p>
+		  </a>
+      </div>
+		</div>
+  </div>
+	<br>
+	<div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="chinese_food-1200x628-facebook.jpg" alt="Chinesefood" height="auto">
-        <p><strong>Chinese food</strong></p>
+		  <a href="search.php">
+			  <img src="cina.jpg" alt="Chinese" height="auto">
+			  <p style="font-size: 30px"><strong>Chinese</strong></p>
+		  </a>
+        
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="howcuttingdo.jpg" alt="Junkfood" height="auto">
-        <p><strong>Junk food</strong></p>
+		  <a href="search.php">
+			  <img src="cafe.jpg" alt="cafe" height="auto">
+			  <p style="font-size: 30px"><strong>Cafe</strong></p>
+		  </a>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="5Seafood_a02cf72f-a540-429f-868c-977de095e977.jpg" alt="Seafood" height="auto">
-        <p><strong>Sea food</strong></p>
+		  <a href="search.php">
+			  <img src="sushi.png" alt="japanese" height="auto">
+			  <p style="font-size: 30px"><strong>Japanese</strong></p>
+		  </a>
       </div>
     </div>
-	  <button class="btn btn-default btn-lg">More</button>
-  </div><br>
+  </div>
+	<a href="search.php"><button class="btn btn-default btn-lg">More</button></a><br>
   
 </div>
 	
@@ -467,10 +500,8 @@ $(document).ready(function(){
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
@@ -486,7 +517,6 @@ $(document).ready(function(){
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
-
       var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide");
