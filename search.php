@@ -39,18 +39,38 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default">
-  <a class="navbar-brand" href="index.php"><img src="logoo.png" class="img-circle" alt="Logo" style="width:25px"></a>
-  <div>
+<nav class="navbar navbar-default fixed-top">
+  <a class="navbar-brand" href="index.php"><img src="logoo.png" class="img-circle" alt="Logo" style="width:30px"></a>
+  <form>
+    <div class="input-group">
+      <input class="form-control" size="50" placeholder="Cari Tempat Makan Favoritmu !">
+      <div class="input-group-btn">
+        <a href="search.php"><button type="button" class="btn btn-danger slide">Search</button></a>
+      </div>
+    </div>
+  </form>
+	<div>
+	  
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.php">Back to Home</a></li>
       </ul>
     </div>
 </nav>
-
-<div class="container" style="margin-top:30px">
+	<br>
+	<br>
+<div class="container row">
+	<div class="col-md-10" style="margin-top:30px">
   <div class="row">
     <div class="col-sm-4">
+		<div class="btn-group-vertical btn-group-toggle btn-group-lg position-fixed">
+			<p style="font-size: 30px">Try Another Cuisine</p>
+			<a href="search.php" class="btn btn-danger">Chinese</a>
+			<a href="search.php" class="btn btn-danger">Cafe</a>
+			<a href="search.php" class="btn btn-danger">Indonesian</a>
+			<a href="search.php" class="btn btn-danger">Western</a>
+			<a href="search.php" class="btn btn-danger">Japanese</a>
+		</div>
+<!--
       <h4>Sort</h4>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
@@ -70,21 +90,50 @@
         </li>
       </ul>
       <hr class="d-sm-none">
+-->
     </div>
     <div class="col-sm-8">
-      <h2>Resto1</h2>
+	  <a>
+		  <h2>Resto1</h2>
+	  </a>
       <h5>Title description, Dec 7, 2017</h5>
       <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
       <br>
-      <h2>Resto2</h2>
+      <a>
+	  <h2>Resto2</h2>
+	  </a>
       <h5>Title description, Sep 2, 2017</h5>
       <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
   </div>
+</div>
+<div class="col-md-2">
+	<br>
+	<h4>Popular</h4>
+		<div class="card" style="width:400px">
+			<img class="card-img-top" src="contohresto.jpg" alt="Card image" style="width:100%">
+			<div class="card-body">
+				<h4 class="card-title">restoxxx</h4>
+				<a href="#" class="btn btn-danger">See this resto</a>
+			</div>
+		</div>
+		<div class="card" style="width:400px">
+			<img class="card-img-top" src="contohresto.jpg" alt="Card image" style="width:100%">
+			<div class="card-body">
+				<h4 class="card-title">restoxxx</h4>
+				<a href="#" class="btn btn-danger">See this resto</a>
+			</div>
+		</div>
+		<div class="card" style="width:400px">
+			<img class="card-img-top" src="contohresto.jpg" alt="Card image" style="width:100%">
+			<div class="card-body">
+				<h4 class="card-title">restoxxx</h4>
+				<a href="#" class="btn btn-danger">See this resto</a>
+			</div>
+		</div>
+</div>
 </div>
 
 <footer class="container-fluid text-center bg-light">
