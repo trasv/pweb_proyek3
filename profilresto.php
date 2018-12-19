@@ -39,23 +39,30 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default">
-  <a class="navbar-brand" href="index.php"><img src="logoo.png" class="img-circle" alt="Logo" style="width:25px"></a>
-  <div>
+<nav class="navbar navbar-default fixed-top">
+  <a class="navbar-brand" href="index.php"><img src="logoo.png" class="img-circle" alt="Logo" style="width:30px"></a>
+  <form>
+    <div class="input-group">
+      <input class="form-control" size="50" placeholder="Cari Tempat Makan Favoritmu !">
+      <div class="input-group-btn">
+        <a href="search.php"><button type="button" class="btn btn-danger slide">Search</button></a>
+      </div>
+    </div>
+  </form>
+	<div>
+	  
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.php">Back to Home</a></li>
       </ul>
     </div>
 </nav>
-
+<br>
+<br>
 <div class="container" style="margin-top:30px">
   <div class="row">
     <div class="col-sm-8">
       <h2>Resto1</h2>
-      <h5>Title description, Dec 7, 2017</h5>
       <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
       <br>
 	  <!-- Nav tabs -->
 	  <ul class="nav nav-tabs">
@@ -63,13 +70,7 @@
 			  <a class="nav-link active" data-toggle="tab" href="#sekilas">At a glance</a>
 		  </li>
 		  <li class="nav-item">
-			  <a class="nav-link" data-toggle="tab" href="#menu">Menu</a>
-		  </li>
-		  <li class="nav-item">
 			  <a class="nav-link" data-toggle="tab" href="#review">Review</a>
-		  </li>
-		  <li class="nav-item">
-			  <a class="nav-link" data-toggle="tab" href="#photos">Photos</a>
 		  </li>
 	  </ul>
 
@@ -78,10 +79,40 @@
     <div id="sekilas" class="container tab-pane active"><br>
       <h3>At a glance</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div id="menu" class="container tab-pane fade"><br>
-      <h3>Menu</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<div id="home" role="tabpanel" aria-labelledby="home-tab">
+			<div class="row">
+				<div class="col-md-4">
+					<label>Address</label>
+				</div>
+				<div class="col-md-8">
+					<p>Sepanjang Jalan Kenangan</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<label>Rating</label>
+				</div>
+				<div class="col-md-8">
+					<p>4</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<label>Working Hour</label>
+				</div>
+				<div class="col-md-8">
+					<p>XX:XX-XX:XX</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<label>Average Price</label>
+				</div>
+				<div class="col-md-8">
+					<p>Rp.xxx</p>
+				</div>
+			</div>
+		</div>
     </div>
     <div id="review" class="container tab-pane fade"><br>
       <h3>Review</h3>
@@ -94,10 +125,6 @@
     <button type="submit" class="btn btn-danger">Send Review</button>
   </form>
     </div>
-	<div id="photos" class="container tab-pane fade"><br>
-      <h3>Photos</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-    </div>
   </div>
     </div>
 	<div class="col-sm-4">
@@ -106,7 +133,6 @@
 			<img class="card-img-top" src="contohresto.jpg" alt="Card image" style="width:100%">
 			<div class="card-body">
 				<h4 class="card-title">restoxxx</h4>
-				<p class="card-text">Some example text some example text.</p>
 				<a href="#" class="btn btn-danger">See this resto</a>
 			</div>
 		</div>
@@ -114,7 +140,6 @@
 			<img class="card-img-top" src="contohresto.jpg" alt="Card image" style="width:100%">
 			<div class="card-body">
 				<h4 class="card-title">restoxxx</h4>
-				<p class="card-text">Some example text some example text.</p>
 				<a href="#" class="btn btn-danger">See this resto</a>
 			</div>
 		</div>
@@ -122,7 +147,6 @@
 			<img class="card-img-top" src="contohresto.jpg" alt="Card image" style="width:100%">
 			<div class="card-body">
 				<h4 class="card-title">restoxxx</h4>
-				<p class="card-text">Some example text some example text.</p>
 				<a href="#" class="btn btn-danger">See this resto</a>
 			</div>
 		</div>
@@ -139,15 +163,5 @@
   <p><b>Cibus</b> made by : "Masukkan Nama Tim"<br><b>M. Fatih<br>Samuel Marcellinus<br>Alfin Pradana</b></p>
 </footer>
 
-</body>
-</html>
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
-
-<body>
 </body>
 </html>
